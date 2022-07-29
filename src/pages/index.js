@@ -2,7 +2,8 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
 import CountDown from '../components/countDown'
-import { useEffect } from 'react'
+import { useEffect, useRef, useState } from 'react'
+
 
 export default function Home() {
   return (
@@ -17,13 +18,10 @@ export default function Home() {
         <h1 className={styles.title}>
           A quanto tempo o <a href="https://twitter.com/AmIPedrin" target="_blank" rel="noreferrer">Pedrinho</a> está sóbrio!
         </h1>
+        <iframe width="1864" height="801" src="/musica.mp3?autoplay=1" title="musica" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen hidden></iframe>
 
         <CountDown/>
-        <audio
-          src={'/musica.mp3'} 
-          autoPlay 
-          loop
-        />
+       
       </main>
     </div>
   )
