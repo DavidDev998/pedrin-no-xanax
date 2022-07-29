@@ -18,7 +18,7 @@ export default function Home() {
         <h1 className={styles.title}>
           A quanto tempo o <a href="https://twitter.com/AmIPedrin" target="_blank" rel="noreferrer">Pedrinho</a> está sóbrio!
         </h1>
-        <iframe width="1864" height="801" src="/musica.mp3?autoplay=1" title="musica" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen hidden></iframe>
+        <iframe width="1864" height="801" src="/musica.mp3?autoplay=1" title="musica" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen hidden></iframe>
 
         <CountDown/>
        
