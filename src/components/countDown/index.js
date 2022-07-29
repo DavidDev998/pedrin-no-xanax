@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import styles from './Countdown.module.css'
 
-export default function countDown() {
+export default function CountDown() {
     const dayOne = new Date('Jul 21, 2022 22:13:00').getTime()
     const [counter, setCounter] = useState(60);
     const [days, setDays] = useState(0);
@@ -27,7 +27,6 @@ export default function countDown() {
         const dist = now - dayOne
         counter > 0 && setTimeout(() => {
             const values = getReturnValues(dist)
-            console.log(values);
             setDays(values[0])
             setHours(values[1])
             setMinutes(values[2])

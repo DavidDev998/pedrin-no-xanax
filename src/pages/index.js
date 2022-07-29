@@ -15,7 +15,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          A quanto tempo o <a href="https://twitter.com/AmIPedrin" target="_blank">Pedrinho</a> está sóbrio!
+          A quanto tempo o <a href="https://twitter.com/AmIPedrin" target="_blank" rel="noreferrer">Pedrinho</a> está sóbrio!
         </h1>
 
         <CountDown/>
