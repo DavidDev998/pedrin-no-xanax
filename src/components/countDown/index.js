@@ -26,7 +26,7 @@ export default function CountDown() {
         const now = new Date().getTime()
         const dist = now - dayOne
         counter > 0 && setTimeout(() => {
-            const values = getReturnValues(dist)
+            const values = /*getReturnValues(dist)*/[0,0,0,0]
             setDays(values[0])
             setHours(values[1])
             setMinutes(values[2])
